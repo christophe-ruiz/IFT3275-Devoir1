@@ -26,9 +26,9 @@ if __name__ == '__main__':
             print(names[i])
 
     print("\n--DUMP--")
-    print("--INT--")
+    print(f'--INT:{len(int_names)}--')
     print(int_names)
-    print("--RSA--")
+    print(f"--RSA:{len(rsa_names)}--")
     print(rsa_names)
-    print("--NAMES--")
+    print(f"--NAMES:{len(names)}--")
     print(names)
