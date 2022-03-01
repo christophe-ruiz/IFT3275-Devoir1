@@ -2,7 +2,7 @@ from json import load
 names = []
 
 if __name__ == '__main__':
-    with open('./names.json', 'r', encoding="utf-8") as f:
+    with open('names.json', 'r', encoding="utf-8") as f:
         names = load(f)
     int_names = []
 
@@ -30,6 +30,10 @@ if __name__ == '__main__':
 
     # Dump des listes pour le debuggage.
     print("\n--DUMP--")
+    print(f'--NOM:{names[0]}--')
+    print(f'--INT:{int_names[0]}--')
+    print(f'--RSA:{rsa_names[0]}--')
+    print(f'--INT:{len(int_names)}--')
     print(f'--INT:{len(int_names)}--')
     print(int_names)
     print(f"--RSA:{len(rsa_names)}--")
